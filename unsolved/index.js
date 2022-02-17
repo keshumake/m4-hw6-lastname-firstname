@@ -24,10 +24,10 @@ function getPizzaOrder() {
   pizza.crust = crust;
   if (pizza.crust === 'thick') {
     pizza.cost += thickCrustUpcharge,
-  };
+  }
   if (pizza.crust === 'thin') {
     console.log('Thin crust no change')
-  };
+  }
 
   
 
@@ -37,7 +37,14 @@ function getPizzaOrder() {
   // if no toppings are given, make sure pizza.toppings is set to []
   // if the user has added toppings, add toppingsFee multiplied by
   // the number of toppings added to pizza.cost
-  toppings.Array
+  addToppings: function(toppings) {
+    this.toppings.push(toppings)
+  }
+  pizza.toppings: [i];
+
+  for ( let i = 0; i < pizza.toppings.length; i++) {
+    pizza.toppings[i]
+  }
 
   
   var extraCheese = confirm("Would you like extra cheese?")
@@ -45,11 +52,13 @@ function getPizzaOrder() {
   // if the user specifies extra cheese, set pizza.extraCheese to true or false
   // if the user specifies extra cheese, add extraCheeseUpcharge to pizza.cost
 
-  if extraCheese === true {
+  if (extraCheese) {
     pizza.extraCheese = true,
     pizza.cost += extraCheeseUpcharge,
-  };
-
+  }
+else {
+  extraCheese = false;
+}
 
   var isDelivery = confirm("Is your order for Delivery?")
   // HINT: confirm() returns a boolean
