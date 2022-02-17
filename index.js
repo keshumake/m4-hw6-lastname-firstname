@@ -23,7 +23,7 @@ function getPizzaOrder() {
   // to pizza.cost
   pizza.crust = crust;
   if (pizza.crust === 'thick') {
-    pizza.cost += thickCrustUpcharge;
+    pizza.cost += thickCrustUpcharge,
   }
   if (pizza.crust === 'thin') {
     console.log('Thin crust no change')
@@ -37,13 +37,15 @@ function getPizzaOrder() {
   // if no toppings are given, make sure pizza.toppings is set to []
   // if the user has added toppings, add toppingsFee multiplied by
   // the number of toppings added to pizza.cost
-  if (toppings) {
-    pizza.toppings = toppings.split(",");
-    pizza.cost += pizza.toppings.length * toppingsFee;
+  addToppings: function(toppings) {
+    this.toppings.push(toppings)
   }
-  else {
-    pizza.toppings[];
+  pizza.toppings: [i];
+
+  for ( let i = 0; i < pizza.toppings.length; i++) {
+    pizza.toppings[i]
   }
+
   
   var extraCheese = confirm("Would you like extra cheese?")
   // HINT: confirm() returns a boolean
@@ -51,8 +53,8 @@ function getPizzaOrder() {
   // if the user specifies extra cheese, add extraCheeseUpcharge to pizza.cost
 
   if (extraCheese) {
-    pizza.extraCheese = true;
-    pizza.cost += extraCheeseUpcharge;
+    pizza.extraCheese = true,
+    pizza.cost += extraCheeseUpcharge,
   }
 else {
   extraCheese = false;
@@ -64,8 +66,8 @@ else {
   // if order is NOT for delivery, set pizza.saleType to "take-out"
   // if order if for delivery, add deliveryFee to pizza.cost
 
-  if (isDelivery === true) {
-    pizza.saleType = "delivery";
+  if isDelivery === true {
+    let pizza.saleType = "delivery";
     pizza.cost += deliveryFee;
   }
   else {
