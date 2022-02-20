@@ -40,7 +40,7 @@ function getPizzaOrder() {
     pizza.cost += pizza.toppings.length * toppingsFee;
   }
   else {
-    pizza.toppings[];
+    pizza.toppings = [];
   }
   
   var extraCheese = confirm("Would you like extra cheese?")
