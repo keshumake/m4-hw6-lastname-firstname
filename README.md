@@ -46,3 +46,7 @@ Additional MDN Resources:
 - [Working with Objects](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Working_with_Objects)
 - [List of String Methods](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)
 - [List of Array Methods](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array)
+
+
+## Comments
+I reached out to the professor to get some help with the array portion of the assignment as well as some clarification on the errors and console messages I was receiving. 
